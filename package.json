@@ -1,6 +1,6 @@
 {
   "name": "@shivak11/atom-creator-llm-agnostic",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "LLM-agnostic OpenCode port of atom-creator — cheap batch course generation with Kimi K2.6, DeepSeek, or any OpenCode-compatible provider.",
   "bin": {
     "atom-creator-llm-agnostic": "./install.js"
