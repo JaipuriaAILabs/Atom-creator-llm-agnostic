@@ -201,7 +201,12 @@ Three cooperating layers, standard OpenCode extensibility:
     "visual-director":      { "model": "moonshot/kimi-k2.6-max" }
   },
   "mcp": {
-    "perplexity": { "command": "npx", "args": ["-y", "@perplexity-ai/mcp-server"] }
+    "perplexity": {
+      "type": "local",
+      "command": ["npx", "-y", "@perplexity-ai/mcp-server"],
+      "enabled": true,
+      "environment": { "PERPLEXITY_API_KEY": "{env:PERPLEXITY_API_KEY}" }
+    }
   }
 }
 ```

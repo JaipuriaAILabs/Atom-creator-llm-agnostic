@@ -86,12 +86,18 @@ function deepMergeOpencodeConfig(existing) {
     if (!agentMap[name]) agentMap[name] = cfg;
   }
 
-  // mcp map — only add perplexity if absent
+  // mcp map — only add perplexity if absent. Shape per OpenCode schema
+  // (https://opencode.ai/docs/mcp-servers/): type discriminator required,
+  // command is an array, env vars passed via "environment" object.
   const mcpMap = base.mcp && typeof base.mcp === "object" ? { ...base.mcp } : {};
   if (!mcpMap.perplexity) {
     mcpMap.perplexity = {
-      command: "npx",
-      args: ["-y", "@perplexity-ai/mcp-server"],
+      type: "local",
+      command: ["npx", "-y", "@perplexity-ai/mcp-server"],
+      enabled: true,
+      environment: {
+        PERPLEXITY_API_KEY: "{env:PERPLEXITY_API_KEY}",
+      },
     };
   }
 
