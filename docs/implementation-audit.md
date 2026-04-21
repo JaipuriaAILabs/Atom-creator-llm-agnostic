@@ -46,7 +46,7 @@ The three known UX downgrades (AskUserQuestion → inline prompts, SessionStart 
 **None.**
 
 The repo as-shipped would allow a user to:
-1. Run `npx atom-creator-llm-agnostic install --project` in a workspace
+1. Run `npx @shivak11/atom-creator-llm-agnostic install --project` in a workspace
 2. Have skills/agents/commands/shared/scripts/templates copied to `.opencode/`
 3. Have `opencode.json` merged with plugin + agent + mcp entries
 4. Have `.env` stubs prompted

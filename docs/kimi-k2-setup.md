@@ -14,12 +14,12 @@ This guide covers the recommended default stack (Moonshot + Kimi K2.6) and drop-
 
 ## 2. Configure `opencode.json`
 
-The `npx atom-creator-llm-agnostic install` command writes the baseline for you. After running the installer, your `opencode.json` should look like:
+The `npx @shivak11/atom-creator-llm-agnostic install` command writes the baseline for you. After running the installer, your `opencode.json` should look like:
 
 ```json
 {
   "$schema": "https://opencode.ai/schema/config.json",
-  "plugin": ["atom-creator-llm-agnostic"],
+  "plugin": ["@shivak11/atom-creator-llm-agnostic"],
   "model": "moonshot/kimi-k2.6",
   "provider": {
     "moonshot": {

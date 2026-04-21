@@ -22,7 +22,7 @@ For teams already using the upstream Claude Code plugin who want to try cheap bu
 
 # 2. Add the OpenCode port to the same workspace:
 cd ~/Python\ Projects/Rehearsal\ Course\ Gen-\ Revised
-npx atom-creator-llm-agnostic install --project
+npx @shivak11/atom-creator-llm-agnostic install --project
 
 # 3. Both now coexist. Run whichever CLI you prefer per task:
 claude    # for premium / final-audit

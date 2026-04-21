@@ -5,7 +5,7 @@
  * Bootstraps the plugin into an OpenCode project or global config.
  *
  * Usage:
- *   npx atom-creator-llm-agnostic install [--project | --global] [--force] [--non-interactive]
+ *   npx @shivak11/atom-creator-llm-agnostic install [--project | --global] [--force] [--non-interactive]
  */
 
 const path = require("path");
@@ -17,7 +17,7 @@ const prompts = require("prompts");
 const chalk = require("chalk").default || require("chalk");
 
 const PACKAGE_ROOT = __dirname;
-const PKG_NAME = "atom-creator-llm-agnostic";
+const PKG_NAME = "@shivak11/atom-creator-llm-agnostic";
 const PKG_VERSION = (() => {
   try {
     return require(path.join(PACKAGE_ROOT, "package.json")).version;
