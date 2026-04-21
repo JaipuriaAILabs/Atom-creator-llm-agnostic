@@ -1,0 +1,12 @@
+{
+  "slug": "bad-course",
+  "screens": [
+    {
+      "type": "story",
+      "blocks": [
+        { "type": "text", "value": "This uses the deprecated value key" },
+        { "type": "glossary", "term": "X", "definition": "Y" }
+      ]
+    }
+  ]
+}

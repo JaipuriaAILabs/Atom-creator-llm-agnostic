@@ -1,0 +1,15 @@
+tests/
+docs/migration-from-claude-code.md
+docs/opencode-portability-matrix.md
+docs/kimi-k2-setup.md
+.github/
+src/
+*.tgz
+.env
+.env.*
+node_modules/
+.DS_Store
+*.log
+tsconfig.json
+.gitignore
+.opencode/

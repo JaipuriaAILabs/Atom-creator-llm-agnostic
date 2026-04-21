@@ -1,0 +1,69 @@
+{
+  "name": "atom-creator-llm-agnostic",
+  "version": "0.1.0",
+  "description": "LLM-agnostic OpenCode port of atom-creator — cheap batch course generation with Kimi K2.6, DeepSeek, or any OpenCode-compatible provider.",
+  "bin": {
+    "atom-creator-llm-agnostic": "./install.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "bash tests/e2e-opencode-full-pipeline.sh",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^0.5.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "prompts": "^2.4.2",
+    "zod": "^3.23.8"
+  },
+  "peerDependencies": {
+    "opencode-ai": ">=0.5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.14.0",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "files": [
+    "dist/",
+    "skills/",
+    "agents/",
+    "commands/",
+    "shared/",
+    "scripts/",
+    "templates/",
+    "docs/AGENTS.md",
+    "README.md",
+    "LICENSE",
+    "install.js"
+  ],
+  "keywords": [
+    "opencode",
+    "claude-code",
+    "course-generation",
+    "atom-creator",
+    "ai-content",
+    "kimi",
+    "moonshot",
+    "deepseek",
+    "llm",
+    "education"
+  ],
+  "author": "Jaipuria AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaipuriaAILabs/atom-creator-llm-agnostic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JaipuriaAILabs/atom-creator-llm-agnostic/issues"
+  },
+  "homepage": "https://github.com/JaipuriaAILabs/atom-creator-llm-agnostic#readme"
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "test-course",
+  "screens": [
+    { "type": "cover", "blocks": [ { "type": "text", "font": "heading", "text": "Cover" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 1" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 2" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 3" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 4" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 5" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 6" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 7" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 8" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 9" } ] },
+    { "type": "apply", "blocks": [ { "type": "text", "font": "body", "text": "Screen 10" } ] },
+    { "type": "story", "blocks": [ { "type": "text", "font": "body", "text": "Screen 11" } ] },
+    { "type": "interview", "blocks": [ { "type": "text", "font": "body", "text": "Screen 12" } ] }
+  ]
+}
